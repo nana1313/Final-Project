@@ -44,20 +44,22 @@
 }
 body {
   width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
   background: var(--white-97, #f7f7f8);
   background-size: cover;
-  margin: 0 auto;
+  overflow-x: hidden;
 }
 .box {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
 }
 header {
+  max-width: 100%;
   background-color: #dddddd;
   height: auto;
-  width: 100%;
-  padding: 47px;
+  padding-bottom: 47px;
 }
 .header-logo {
   font-family: poppins-extrabold;
@@ -217,10 +219,11 @@ header {
   color: #222222;
   text-align: right;
 }
-.about-myself h4 span {
+.about-myself h6 {
   font-family: muli;
   font-size: 14px;
   color: #daae19;
+  margin-top: -40px;
 }
 .about-myself p {
   font-family: muli-regular;
@@ -240,6 +243,9 @@ header {
   font-size: 15px;
   margin-top: 73px;
   cursor: pointer;
+}
+.about-myself button:hover{
+ background-color: #cc7a00;
 }
 .my-img img {
   width: 430px;
@@ -295,6 +301,7 @@ header {
 }
 .my-info {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 30px;
 }
@@ -376,6 +383,7 @@ header {
   gap: 50px;
   height: 570px;
   background-image: url(src/img/clip.jpg);
+  object-fit: cover;
 }
 .recomendation-txt p {
   font-family: Roboto-Light;
@@ -883,34 +891,100 @@ header {
 .copyright p span{
   color: #FFFFFF;
 }
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
   .box{
     width: 100%;
+    margin: 0 auto;
   }
   header{
-    height: auto;
+    width: 100%;
   }
-  .header-logo-about-me{
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .slider-section{
+  .header-logo-about-me,
+  .slider-section,
+  .social-media,
+  .satisfied-client,
+  .satisfied-client-box,
+  .about-my-education,
+  .about-myself,
+  .my-information,
+  .recomendation-box,
+  .latest-projects-box,
+  .article-1,
+  .article-3{
     flex-direction: column;
     align-items: center;
   }
   .social-media{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -100px;
+    margin-top: -50px;
   }
   .satisfied-client{
-    justify-content: center;
     padding-right: 0px;
   }
-  .satisfied-client-box{
+  .my-information{
+    height: auto;
+    padding-bottom: 66px;
+    padding-top: 66px;
+  }
+  .services-tab{
+    grid-template-columns: auto auto;
+  }
+  .recomendation-box{
+    height: auto;
+    padding: 20px 0 20px 0;
+  }
+  .latest-projects-box{
+    width: auto;
+  }
+  .latest-projects-list{
+    height: 80px;
+    width: 400px;
+    padding: 0 40px 0 5px
+  }
+  .latest-projects-list ul{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .latest-projects-table{
+    grid-template-columns: auto auto;
+  }
+  .latest-articles{
+    margin-top: 620px;
+  }
+  .first-part{
+    text-align: center;
+  }
+  .years-part{
+    margin-top: -290px;
+    width: 590px;
+    height: 123px;
+  }
+  .years-part p{
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+  .article-2{
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
+    margin-top: 1px;
+  }
+  .article-3{
+    margin-top: 1px;
+  }
+  .thirs-part img{
+    width: 590px;
+  }
+  .rosa-team{
+    margin-top: 100px;
+  }
+  .team-logos{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .form-inputes{
+    grid-template-columns: auto;
+  }
+  #form-box textarea{
+    width: 290px;
   }
 }
