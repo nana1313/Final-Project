@@ -987,4 +987,7 @@ header {
   #form-box textarea{
     width: 290px;
   }
+  .recomendation-txt p{
+    text-align: center;
+  }
 }
