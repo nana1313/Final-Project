@@ -144,6 +144,8 @@ header {
   }
 }
 .social-media {
+  display: flex;
+  flex-direction: column;
   margin-top: -155px;
 }
 .social-media-icon {
@@ -986,5 +988,9 @@ header {
   }
   #form-box textarea{
     width: 290px;
+  }
+  .reco-check{
+    flex-direction: row;
+    padding-bottom: 30px;
   }
 }
