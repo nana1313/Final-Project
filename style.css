@@ -989,6 +989,9 @@ header {
   #form-box textarea{
     width: 290px;
   }
+  .recomendation-txt p{
+    text-align: center;
+  }
   .reco-check{
     flex-direction: row;
     padding-bottom: 30px;
