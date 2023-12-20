@@ -393,6 +393,10 @@ header {
   color: #ffffff;
   text-align: right;
   letter-spacing: 0.45px;
+  width: 500px;
+}
+.recomendation-name-job{
+  width: 300px;
 }
 #recomendation-txt-1 {
   display: block;
@@ -407,6 +411,7 @@ header {
 .recomendation-img img {
   width: 140px;
   height: 140px;
+  object-fit: cover;
   border-radius: 50%;
 }
 #recomendation-img-1 {
@@ -539,6 +544,7 @@ header {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
 }
 #project-1:hover #project-img,
 #project-2:hover #project-img,
@@ -677,6 +683,7 @@ header {
 .thirs-part img {
   width: 827px;
   height: 590px;
+  object-fit: cover;
 }
 .article-2 {
   display: flex;
@@ -751,7 +758,7 @@ header {
 .contact-us {
   margin-top: 195px;
   width: 100%;
-  height: 660px;
+  height: auto;
   background-image: url(src/img/map.jpg);
 }
 .contact-form {
@@ -789,12 +796,14 @@ header {
   gap: 10px;
 }
 .form-inputes input {
+  padding: 12px 20px;
   border: none;
-  width: 290px;
+  width: 267px;
   height: 50px;
   background: #fafafa 0% 0% no-repeat padding-box;
 }
 #form-box textarea {
+  padding: 12px 20px;
   margin-top: 10px;
   width: 900px;
   height: 110px;
@@ -815,6 +824,7 @@ header {
 .button-div {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 #submit {
   margin-top: 30px;
@@ -833,6 +843,7 @@ header {
   color: white;
 }
 #modal {
+  text-align: center;
   margin-top: 30px;
   display: none;
   color: #00cc00;
@@ -987,7 +998,7 @@ header {
     grid-template-columns: auto;
   }
   #form-box textarea{
-    width: 290px;
+    width: 267px;
   }
   .recomendation-txt{
     padding-top: 20px;
@@ -998,5 +1009,21 @@ header {
   .reco-check{
     flex-direction: row;
     padding-bottom: 30px;
+  }
+  #recomendation-job-1,
+  #recomendation-job-2,
+  #recomendation-job-3{
+    text-align: center;
+  }
+  #recomendation-name-1,
+  #recomendation-name-2,
+  #recomendation-name-3{
+    text-align: center;
+  }
+  .button-div{
+    padding-bottom: 40px;
+  }
+  #modal{
+    font-size: 20px;
   }
 }
